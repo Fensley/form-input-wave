@@ -1,4 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 * {
   box-sizing: border-box;
@@ -6,13 +8,14 @@
 
 body {
   background-color: #4682B4;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Muli', sans-serif;
   display: flex;
   height: 100vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 0;
+  color: #FFF;
   overflow-x: hidden;
 }   
 
@@ -49,4 +52,23 @@ body {
 .form-control input:focus ,
 .form-control input:valid {
   outline: 0;
+}
+
+.btn{
+  cursor: pointer;
+  display: inline-block;
+  width: 100%;
+  background-color: lightblue;
+  padding: 15px;
+  border: none;
+  border-radius: 5px;
+}
+.text{
+  margin-top: 30px;
+}
+.btn:focus{
+  outline: 0;
+}
+.btn:active{
+  transform: scale(0.98);
 }
